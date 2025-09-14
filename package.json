@@ -1,0 +1,72 @@
+{
+	"name": "24fire-api",
+	"description": "A TypeScript library for 24fire API integration",
+	"version": "0.0.1",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"module": "./dist/index.js",
+	"main": "./dist/index.cjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./dist/index.d.ts",
+				"default": "./dist/index.js"
+			},
+			"require": {
+				"types": "./dist/index.d.cts",
+				"default": "./dist/index.cjs"
+			}
+		}
+	},
+	"scripts": {
+		"build": "bunup",
+		"dev": "bunup --watch",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write .",
+		"format": "biome format .",
+		"format:fix": "biome format --write .",
+		"tsc": "tsc --noEmit",
+		"test": "bun test",
+		"test:watch": "bun test --watch",
+		"test:coverage": "bun test --coverage",
+		"release": "bumpp --commit --push --tag",
+		"publish:ci": "bun publish --access public --no-git-checks",
+		"publish:test": "bun publish --dry-run",
+		"prepare": "simple-git-hooks"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.2.4",
+		"@types/bun": "^1.2.21",
+		"bumpp": "^10.2.3",
+		"bunup": "^0.12.0",
+		"simple-git-hooks": "^2.13.1",
+		"typescript": "^5.9.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/devpanda0/24fire-api.git"
+	},
+	"peerDependencies": {
+		"typescript": ">=4.5.0"
+	},
+	"peerDependenciesMeta": {
+		"typescript": {
+			"optional": true
+		}
+	},
+	"simple-git-hooks": {
+		"pre-commit": "bun run lint:fix && git add ."
+	},
+	"homepage": "https://github.com/devpanda0/24fire-api#readme",
+	"bugs": {
+		"url": "https://github.com/devpanda0/24fire-api/issues"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"arktype": "^2.1.22",
+		"axios": "^1.12.2"
+	}
+}
