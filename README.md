@@ -3,18 +3,22 @@
 <table>
   <tr>
     <td>
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="/assets/24fire-logo-white.png">
-        <source media="(prefers-color-scheme: light)" srcset="/assets/24fire-logo-dark.png">
-        <img alt="24fire" src="/assets/24fire-logo-white.png" width="200">
-      </picture>
+      <a href="https://24fire.de/" target="_blank">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="/assets/24fire-logo-white.png">
+          <source media="(prefers-color-scheme: light)" srcset="/assets/24fire-logo-dark.png">
+          <img alt="24fire" src="/assets/24fire-logo-white.png" width="200">
+        </picture>
+      </a>
     </td>
     <td>
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="/assets/fireapi-logo-white.png">
-        <source media="(prefers-color-scheme: light)" srcset="/assets/fireapi-logo-dark.png">
-        <img alt="FireApi" src="/assets/fireapi-logo-white.png" width="200">
-      </picture>
+      <a href="https://fireapi.de/" target="_blank">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="/assets/fireapi-logo-white.png">
+          <source media="(prefers-color-scheme: light)" srcset="/assets/fireapi-logo-dark.png">
+          <img alt="FireApi" src="/assets/fireapi-logo-white.png" width="200">
+        </picture>
+      </a>
     </td>
   </tr>
 </table>
