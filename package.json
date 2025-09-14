@@ -1,7 +1,7 @@
 {
-	"name": "24fire-api",
+	"name": "24-fire-api",
 	"description": "A TypeScript library for 24fire API integration",
-	"version": "0.0.1-beta.1",
+	"version": "0.0.1-beta.2",
 	"type": "module",
 	"files": [
 		"dist"
