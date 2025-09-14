@@ -20,7 +20,6 @@ jobs:
         with:
           node-version: lts/*
           registry-url: https://registry.npmjs.org/
-          token: ${{ secrets.NPM_TOKEN }}
       - uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
