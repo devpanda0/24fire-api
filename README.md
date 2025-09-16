@@ -41,16 +41,19 @@ A comprehensive TypeScript library for interacting with the 24fire API, providin
 
 ```bash
 # npm
-npm install 24fire-api
+npm install @devpanda/24fire-api
+
 
 # bun
-bun add 24fire-api
+bun add @devpanda/24fire-api
+
 
 # yarn
-yarn add 24fire-api
+yarn add @devpanda/24fire-api
+
 
 # pnpm
-pnpm add 24fire-api
+pnpm add @devpanda/24fire-api
 ```
 
 ## 🛠️ Usage
@@ -58,7 +61,7 @@ pnpm add 24fire-api
 ### Customer API
 
 ```typescript
-import {FireApi} from '24fire-api';
+import {FireApi} from '@devpanda/24fire-api';
 
 // Initialize Customer API
 const customerApi = new FireApi.CustomerApi('your-customer-api-key');
@@ -78,7 +81,7 @@ const status = await kvm.getStatus();
 ### Reseller API
 
 ```typescript
-import {FireApi} from '24fire-api';
+import {FireApi} from '@devpanda/24fire-api';
 
 // Initialize Reseller API (LIVE or SANDBOX)
 const resellerApi = new FireApi.ResellerApi('SANDBOX', 'your-reseller-api-key');
